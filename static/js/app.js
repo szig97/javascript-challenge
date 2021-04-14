@@ -19,4 +19,8 @@ function deleteTbody() {
     d3.select("tbody")
       .selectAll("tr").remove()
       .selectAll("td").remove();
-}
+};
+
+// Initial display of UFO sightings
+console.log(tableData);
+tableDisplay(tableData);
