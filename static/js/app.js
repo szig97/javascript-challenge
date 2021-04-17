@@ -52,6 +52,12 @@ button.on("click", function(event) {
             .attr("colspan", 7)
             .html("<h4>No Records Found</h4>");
     };
+
+    // display database
+    console.log(filteredData);
+    tableDisplay(filteredData);
+});
+
 // Part 2: Multiple Search Categories
 // filter the database
 button.on("click", function(event) {
@@ -75,10 +81,16 @@ button.on("click", function(event) {
         };
     };
 
-    
-})
+    // display message if no records found
+    if (filteredData.length == 0) {
+       d3.select("tbody")
+         .append("tr")
+         .append("td")
+            .attr("colspan", 7)
+            .html("<h4>No Records Found</h4>") 
+    };
 
+    // display database
     console.log(filteredData);
     tableDisplay(filteredData);
 });
-
