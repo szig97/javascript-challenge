@@ -61,6 +61,11 @@ button.on("click", function(event) {
     var filteredData = tableData;
     var inputID = document.getElementsByClassName("form-control");
     
+    // iterate through all input fields
+    for (var i = 0; i < inputID.length; i++) {
+        var idName = inputID[i].id;
+        var field = d3.select("#" + idName).property("value");
+    }
 })
 
     console.log(filteredData);
