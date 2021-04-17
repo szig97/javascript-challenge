@@ -65,7 +65,17 @@ button.on("click", function(event) {
     for (var i = 0; i < inputID.length; i++) {
         var idName = inputID[i].id;
         var field = d3.select("#" + idName).property("value");
-    }
+
+        // treat empty fields as a search for all in that field
+        if (field.trim() !== "") {
+            var filteredData = filteredData.filter(ufoSighting =>
+                // match as case insensitive
+                ufoSighting[idName].toUpperCase().trim() ===
+                field.toUpperCase().trim());
+        };
+    };
+
+    
 })
 
     console.log(filteredData);
