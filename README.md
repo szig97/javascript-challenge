@@ -6,7 +6,8 @@ There is just one tiny problem though... our collection is too large to search t
 That's why we are hiring you. We need you to write code that will create a table dynamically based upon a dataset we provide. We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
 You can handle this... right? The planet Earth needs to know what we have found!
 
-# Level 1: Automatic Table and Date Search (Required) *GO to index.html
+# Level 1: Automatic Table and Date Search (Required) 
+**Go to index.html**
 
 -Create a basic HTML web page or use the index.html file provided (we recommend building your own custom page!).
 
@@ -16,7 +17,8 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 -Use a date form in your HTML document and write JavaScript code that will listen for events and search through the date/time column to find rows that match user input.
 
-# Level 2: Multiple Search Categories (Optional) *go to index2.html
+# Level 2: Multiple Search Categories (Optional) 
+**Go to index2.html**
 
 -Complete all of Level 1 criteria.
 
