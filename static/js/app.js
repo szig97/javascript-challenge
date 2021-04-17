@@ -29,7 +29,7 @@ tableDisplay(tableData);
 var button = d3.select("#filter-btn");
 
 // Part 1: Automatic Table and Data Search
-// filter and display the database
+// filter the database
 button.on("click", function(event) {
     d3.event.preventDefault();
     deleteTbody();
@@ -53,7 +53,15 @@ button.on("click", function(event) {
             .html("<h4>No Records Found</h4>");
     };
 // Part 2: Multiple Search Categories
- 
+// filter the database
+button.on("click", function(event) {
+    d3.event.preventDefault();
+    deleteTbody();
+
+    var filteredData = tableData;
+    var inputID = document.getElementsByClassName("form-control");
+    
+})
 
     console.log(filteredData);
     tableDisplay(filteredData);
