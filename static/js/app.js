@@ -28,6 +28,7 @@ tableDisplay(tableData);
 // 'Filter Table' button
 var button = d3.select("#filter-btn");
 
+// Part 1: Automatic Table and Data Search
 // filter and display the database
 button.on("click", function(event) {
     d3.event.preventDefault();
@@ -51,7 +52,10 @@ button.on("click", function(event) {
             .attr("colspan", 7)
             .html("<h4>No Records Found</h4>");
     };
+// Part 2: Multiple Search Categories
+ 
 
     console.log(filteredData);
     tableDisplay(filteredData);
 });
+
